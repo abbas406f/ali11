@@ -1,0 +1,275 @@
+،, [9/7/2024 6:06 PM]
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #4b0082;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    animation: fadeInDown 1s ease-out;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4b0082;
+    color: #ffda79;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background: linear-gradient(135deg, #4b0082, #8a2be2);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    line-height: 1.2;
+    padding: 0 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #fff;
+    animation: bounce 2s infinite;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffda79;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.service-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.service-box input[type="radio"] {
+    display: none;
+}
+
+.service-box label {
+    display: block;
+    cursor: pointer;
+}
+
+.service-box input[type="radio"]:checked + label {
+    background-color: #4b0082;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-box input[type="radio"]:checked + label h3 {
+    color: #ffda79;
+}
+
+.service-box input[type="radio"]:checked + label p {
+    color: #e0e0e0;
+}
+
+.contact-info a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: #4b0082;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #4b0082;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.contact-info a:hover {
+    background-color: #4b0082;
+    color: #fff;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #4b0082;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+،, [9/7/2024 6:06 PM]
+.social-links a:hover {
+    color: #ffda79;
+}
+
+.hero-content pre {
+    font-family: monospace;
+    font-size: 18px;
+    color: #ffda79;
+    white-space: pre-wrap;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
